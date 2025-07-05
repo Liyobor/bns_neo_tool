@@ -22,10 +22,12 @@ new Vue({
             return (profitFor20Tools / 72 * 150).toFixed(2);
         },
         dummyProfit2: function() {
-            return (this.sellingPrice2 - (this.powderPriceForProfit * 15)).toFixed(2);
+            const profitFor3Boxes = (this.sellingPrice2 * 3 * 0.916) - (this.powderPriceForProfit * 36) - (1 * this.goldToCrystalRate);
+            return (profitFor3Boxes / 36 * 150).toFixed(2);
         },
         dummyProfit3: function() {
-            return (this.sellingPrice3 - (this.powderPriceForProfit * 20)).toFixed(2);
+            const profitFor1Pack = (this.sellingPrice3 * 0.916) - (this.powderPriceForProfit * 27) - (0.3 * this.goldToCrystalRate);
+            return (profitFor1Pack / 27 * 150).toFixed(2);
         }
     },
     watch: {
