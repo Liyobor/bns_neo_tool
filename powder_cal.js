@@ -12,10 +12,10 @@ new Vue({
     },
     computed: {
         desertPowderPrice: function() {
-            return (this.desertQiPrice / 3.75).toFixed(2);
+            return (this.desertQiPrice / 4.485).toFixed(2);
         },
         moonwaterPowderPrice: function() {
-            return (this.moonwaterQiPrice / 3.4).toFixed(2);
+            return (this.moonwaterQiPrice / 4.3).toFixed(2);
         },
         dummyProfit1: function() {
             const profitFor20Tools = (this.sellingPrice1 * 20 * 0.916) - (0.4 * this.goldToCrystalRate) - (this.powderPriceForProfit * 72);
