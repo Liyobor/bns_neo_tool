@@ -19,6 +19,32 @@
     background-color: #f0f0f0;
 }
 
+.profit-sub-block h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.profit-sub-block .input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.profit-sub-block .input-group label {
+    margin-bottom: 0;
+}
+
+.profit-sub-block .input-group input[type="number"] {
+    width: 80px; /* 調整輸入框寬度 */
+    flex-grow: 0;
+}
+
+.profit-sub-block p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .profit-sub-block {
     border: 1px solid #eee;
     padding: 10px;
