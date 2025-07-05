@@ -7,27 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app2">
+  <div id="powder_cal">
     <div style="margin-bottom: 20px;">
         <a href="index.html">回到目錄</a>
     </div>
 
     <div class="price-table">
-        <h2>物品計算器</h2>
+        <h2>精氣價格</h2>
         <div class="input-group">
-            <label for="itemPrice">物品A價格：</label>
-            <input type="number" id="itemPrice" v-model.number="itemPrice">
+            <label for="desertQiPrice">大漠精氣價格：</label>
+            <input type="number" id="desertQiPrice" v-model.number="desertQiPrice">
         </div>
-        <div class="input-group">
-            <label for="itemSellingPrice">物品B售價：</label>
-            <input type="number" id="itemSellingPrice" v-model.number="itemSellingPrice">
-        </div>
-        <p>總成本：{{ totalCost }}</p>
-        <p>期望收益：{{ expectedProfit }}</p>
+        <p>單個粉末價格：{{ powderPrice }}</p>
     </div>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="app2.js"></script>
+  <script src="powder_cal.js"></script>
 </body>
 </html>
