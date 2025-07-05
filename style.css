@@ -19,6 +19,22 @@
     background-color: #f0f0f0;
 }
 
+.profit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profit-table {
+    width: 400px !important; /* 您可以根據需要調整這個數值 */
+}
+
+.calculators-container {
+    display: flex;
+    justify-content: flex-start; /* 改為 flex-start */
+    gap: 20px; /* 新增區塊間距 */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
