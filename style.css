@@ -22,7 +22,23 @@
 .profit-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.profit-item p {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.profit-item label {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.profit-item input[type="number"] {
+    width: 80px; /* 調整輸入框寬度 */
+    flex-grow: 1;
 }
 
 .profit-table {

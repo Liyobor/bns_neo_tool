@@ -18,7 +18,8 @@ new Vue({
             return (this.moonwaterQiPrice / 3.4).toFixed(2);
         },
         dummyProfit1: function() {
-            return (this.sellingPrice1 - (this.powderPriceForProfit * 10)).toFixed(2);
+            const profitFor20Tools = (this.sellingPrice1 * 20 * 0.916) - (0.4 * this.goldToCrystalRate) - (this.powderPriceForProfit * 72);
+            return (profitFor20Tools / 72 * 150).toFixed(2);
         },
         dummyProfit2: function() {
             return (this.sellingPrice2 - (this.powderPriceForProfit * 15)).toFixed(2);
