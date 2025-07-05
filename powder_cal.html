@@ -39,20 +39,29 @@
                 <input type="number" id="goldToCrystalRate" v-model.number="goldToCrystalRate">
                 神石
             </div>
-            <div class="profit-item">
-                <p>緊急修理工具單價</p>
-                <input type="number" id="sellingPrice1" v-model.number="sellingPrice1">
-                <p>收益 : {{ dummyProfit1 }} / 150粉末</p>
+            <div class="profit-sub-block">
+                <h3>緊急修理工具</h3>
+                <div class="input-group">
+                    <label for="sellingPrice1">售價：</label>
+                    <input type="number" id="sellingPrice1" v-model.number="sellingPrice1">
+                </div>
+                <p>收益 : {{ dummyProfit1 }} 神石 / 150粉末</p>
             </div>
-            <div class="profit-item">
-                <p>印章箱單價</p>
-                <input type="number" id="sellingPrice2" v-model.number="sellingPrice2">
-                <p>收益 : {{ dummyProfit2 }} / 150粉末</p>
+            <div class="profit-sub-block">
+                <h3>印章箱</h3>
+                <div class="input-group">
+                    <label for="sellingPrice2">售價：</label>
+                    <input type="number" id="sellingPrice2" v-model.number="sellingPrice2">
+                </div>
+                <p>收益 : {{ dummyProfit2 }} 神石 / 150粉末</p>
             </div>
-            <div class="profit-item">
-                <p>封印符包單價</p>
-                <input type="number" id="sellingPrice3" v-model.number="sellingPrice3">
-                <p>收益 : {{ dummyProfit3 }} / 150粉末</p>
+            <div class="profit-sub-block">
+                <h3>封印符包</h3>
+                <div class="input-group">
+                    <label for="sellingPrice3">售價：</label>
+                    <input type="number" id="sellingPrice3" v-model.number="sellingPrice3">
+                </div>
+                <p>收益 : {{ dummyProfit3 }} 神石 / 150粉末</p>
             </div>
         </div>
     </div>
